@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1">
+      <stop offset="0%" stop-color="#f1efe9"/>
+      <stop offset="50%" stop-color="#e7e4dc"/>
+      <stop offset="100%" stop-color="#f8f7f2"/>
+    </linearGradient>
+    <linearGradient id="bodyShine" x1="0" x2="1">
+      <stop offset="0%" stop-color="#f5f0e6"/>
+      <stop offset="20%" stop-color="#efe9df"/>
+      <stop offset="50%" stop-color="#d9d7d1"/>
+      <stop offset="100%" stop-color="#f0efe9"/>
+    </linearGradient>
+    <linearGradient id="bodyDark" x1="0" x2="1">
+      <stop offset="0%" stop-color="#181819"/>
+      <stop offset="40%" stop-color="#090a0c"/>
+      <stop offset="100%" stop-color="#2a2d30"/>
+    </linearGradient>
+    <linearGradient id="silverFade" x1="0" x2="1">
+      <stop offset="0%" stop-color="#d0d2d3"/>
+      <stop offset="30%" stop-color="#a6a8aa"/>
+      <stop offset="60%" stop-color="#6b6d70"/>
+      <stop offset="100%" stop-color="#e0dfdc"/>
+    </linearGradient>
+    <linearGradient id="faceFill" x1="0" x2="1">
+      <stop offset="0%" stop-color="#dfe0df"/>
+      <stop offset="40%" stop-color="#9ea1a5"/>
+      <stop offset="70%" stop-color="#4a4d52"/>
+      <stop offset="100%" stop-color="#f1f0ec"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#000" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+
+  <g filter="url(#softShadow)">
+    <!-- Main car silhouette -->
+    <path d="M210 660 L360 500
+             Q470 410 610 395 L960 385
+             Q1100 390 1205 455 L1385 610
+             L1450 660 L1466 700
+             L1400 710 L1300 725 L289 725 L135 700 L150 670 Z"
+          fill="url(#bodyShine)" stroke="#838485" stroke-width="4"/>
+
+    <!-- Dark lower body / trim -->
+    <path d="M285 715 L1360 715 L1420 742 L1455 770 L1260 790 L340 790 L130 770 L165 742 Z"
+          fill="url(#bodyDark)" opacity="0.95"/>
+
+    <!-- Silver accent panels -->
+    <path d="M520 410 L705 410 Q820 428 930 430 L1090 430 Q1160 456 1188 492 L1208 542 L1248 620 L960 620 L860 600 L660 590 L510 600 L400 620 L360 520 L420 468 Z"
+          fill="url(#silverFade)" opacity="0.92"/>
+
+    <!-- Hood center artwork -->
+    <g id="artwork" transform="translate(0,0)">
+      <path d="M470 572 Q626 448 802 446 Q947 446 1040 522 Q1090 568 1068 620 Q968 680 808 690 Q619 696 500 640 Q457 614 470 572 Z"
+            fill="#0d0d0f" opacity="0.9"/>
+
+      <!-- Mask / face base -->
+      <path d="M492 585 Q598 504 760 500 Q921 500 1020 575 Q1056 605 1040 642 Q935 700 806 706 Q647 714 524 668 Q478 647 492 585 Z"
+            fill="url(#faceFill)" stroke="#0e0f10" stroke-width="3"/>
+
+      <!-- Eyes -->
+      <path d="M564 572 Q613 548 658 563 Q633 602 582 605 Q551 592 564 572 Z" fill="#0f1011" opacity="0.95"/>
+      <path d="M891 573 Q938 548 982 560 Q956 600 908 606 Q882 595 891 573 Z" fill="#0f1011" opacity="0.95"/>
+
+      <!-- Eyebrow / brow shapes -->
+      <path d="M550 532 Q600 500 660 520 Q630 540 590 552 Z" fill="#1a1d20" opacity="0.8"/>
+      <path d="M878 530 Q926 500 986 520 Q950 540 900 550 Z" fill="#1a1d20" opacity="0.8"/>
+
+      <!-- Nose -->
+      <path d="M756 566 Q782 598 794 630 Q768 642 744 625 Q728 600 756 566 Z" fill="#0a0a0b" opacity="0.9"/>
+
+      <!-- Mouth / lower face -->
+      <path d="M634 650 Q770 690 903 653 Q887 700 812 718 Q738 735 640 700 Q622 678 634 650 Z" fill="#121416" opacity="0.9"/>
+
+      <!-- Abstract facial contour and texture -->
+      <g opacity="0.7">
+        <ellipse cx="774" cy="613" rx="210" ry="122" fill="none" stroke="#a8aab0" stroke-width="8"/>
+        <ellipse cx="760" cy="610" rx="185" ry="112" fill="none" stroke="#ced0d2" stroke-width="3"/>
+      </g>
+
+      <!-- Patterned background texture inspired by sneaker graphic -->
+      <g opacity="0.35" fill="none" stroke="#d0d3d8" stroke-width="2">
+        <circle cx="518" cy="710" r="16"/>
+        <circle cx="560" cy="725" r="12"/>
+        <circle cx="610" cy="720" r="15"/>
+        <circle cx="660" cy="728" r="12"/>
+        <circle cx="708" cy="720" r="15"/>
+        <circle cx="820" cy="727" r="16"/>
+        <circle cx="900" cy="724" r="15"/>
+        <circle cx="970" cy="716" r="14"/>
+        <circle cx="1018" cy="690" r="18"/>
+        <circle cx="500" cy="640" r="14"/>
+        <circle cx="1028" cy="602" r="15"/>
+        <circle cx="522" cy="574" r="12"/>
+        <circle cx="986" cy="591" r="13"/>
+      </g>
+    </g>
+
+    <!-- Window trim -->
+    <path d="M622 462 L1002 462 Q1092 462 1130 490 L1188 538 L1125 548 L905 548 L760 520 L625 520 Z"
+          fill="#1c1e22" opacity="0.84"/>
+
+    <!-- Headlights and trim -->
+    <path d="M270 650 L352 602 L392 620 L319 684 Z" fill="#f1f1f1" opacity="0.8"/>
+    <path d="M1290 650 L1210 602 L1178 620 L1248 684 Z" fill="#f1f1f1" opacity="0.8"/>
+
+    <!-- Tesla-like light strip and lower details -->
+    <path d="M470 680 L1090 680" stroke="#faf8f4" stroke-width="8" opacity="0.8"/>
+    <path d="M440 705 L1110 705" stroke="#2a2c2f" stroke-width="10" opacity="0.8"/>
+  </g>
+
+  <!-- subtle shadows at base -->
+  <ellipse cx="800" cy="820" rx="520" ry="52" fill="#000000" opacity="0.15"/>
+</svg>
